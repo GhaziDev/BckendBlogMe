@@ -10,7 +10,3 @@ import { Session } from "express-session"
 
 //import {pool} from './routes/routes'
 
-
-
-import dotenv
-
