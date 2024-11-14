@@ -33,5 +33,10 @@
     "socket.io": "^4.7.5",
     "supertest": "^7.0.0",
     "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/nodemailer": "^6.4.16",
+    "@types/pg": "^8.11.10"
   }
 }
