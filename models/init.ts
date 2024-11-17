@@ -2,7 +2,14 @@ import path from 'path'
 import dotenv from 'dotenv'
 import pg from 'pg'
 
-dotenv.config({path:path.join(__dirname+'../.env')})
+
+import { fileURLToPath } from 'url'
+
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
+
+dotenv.config({path:path.join(dirname,'../.env')})
+console.log(process.env.DB_USER)
 
 
 const Pool = {

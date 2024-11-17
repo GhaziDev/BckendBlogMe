@@ -1,8 +1,10 @@
 
-const dotenv = require('dotenv').config({path:'../.env'})
-const bcrypt = require('bcryptjs')
-const pool = require('./init')
-const {v4:uuid} = require('uuid')
+import dotenv from 'dotenv';
+import bcrypt from 'bcryptjs';
+import pool from './init.js';
+import { v4 as uuid } from 'uuid';
+
+dotenv.config({ path: '../.env' });
 
 import ResponseObject, {ControllerObject} from "../typing"
 
